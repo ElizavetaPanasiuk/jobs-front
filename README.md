@@ -1,37 +1,37 @@
-#Deploy (на хостинге не работает роутинг, поэтому при перезагрузке страницы будет ошибка)
+# Deploy (на хостинге не работает роутинг, поэтому при перезагрузке страницы будет ошибка)
 https://job-front.herokuapp.com/
 
-##Front
-###Репозиторий
+## Front
+### Репозиторий
 https://github.com/ElizavetaPanasiuk/jobs-front/tree/develop
-###Для запуска приложения:
+### Для запуска приложения:
 1. yarn
 2. yarn dev
 
-###Для сборки билда
+### Для сборки билда
 yarn build
 
-###Данные для входа (у всех юзеров текущий пароль - 1111)
-####Candidates
+### Данные для входа (у всех юзеров текущий пароль - 1111)
+#### Candidates
 lizaveta.panasiuk@mail.com
 ivan.ivanov
 
-####Companies
+#### Companies
 google@mail.com
 school1@mail.com
 hospital@mail.com
 lode@mail.com
 
-####Recruiters
+#### Recruiters
 irina.petrova@mail.com
 san.san@mail.com
 school1recruiter@mail.com
 ivan.ivanov@mail.com
 petr.petrov@mail.com
 
-##Back
-###Репозиторий
+## Back
+### Репозиторий
 https://github.com/ElizavetaPanasiuk/jo-back
-###Для запуска приложения:
+### Для запуска приложения:
 1. yarn
 2. yarn dev
