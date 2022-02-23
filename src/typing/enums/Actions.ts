@@ -1,8 +1,0 @@
-enum Actions {
-	CLEAR_USER_DATA = 'CLEAR_USER_DATA',
-	SET_USER_DATA = 'SET_USER_DATA',
-	SET_AUTH = 'SET_AUTH',
-	SET_AUTH_ERROR = 'SET_AUTH_ERROR',
-}
-
-export default Actions;
