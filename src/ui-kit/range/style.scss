@@ -3,6 +3,12 @@
 .range {
   position: relative;
 
+  &__label {
+    display: block;
+    margin-bottom: 16px;
+    font-weight: 600;
+  }
+
   &__indicator {
     position: absolute;
     left: 0;

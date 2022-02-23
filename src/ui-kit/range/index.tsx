@@ -10,6 +10,7 @@ type rangeProps = {
 	min?: number;
 	max?: number;
 	disabled?: boolean;
+	label?: string;
 };
 
 const Range = ({
@@ -18,6 +19,7 @@ const Range = ({
 	min = 0,
 	max = 100,
 	disabled = false,
+	label = '',
 	...props
 }: rangeProps) => {
 	const rangeRef = useRef(null);
@@ -48,6 +50,7 @@ const Range = ({
 
 	return (
 		<div className="range">
+			<label className="range__label">{label}</label>
 			<span
 				className="range__indicator"
 				style={{ left: getIndicatorPosition }}

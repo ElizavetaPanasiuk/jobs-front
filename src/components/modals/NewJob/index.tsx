@@ -104,8 +104,11 @@ const NewJobModal = (props: NewJobModalProps) => {
 						placeholder="Job description"
 						maxLength={255}
 					/>
-					<p>Required experience</p>
-					<Range value={requiredExperience} onChange={setRequiredexperience} />
+					<Range
+						value={requiredExperience}
+						onChange={setRequiredexperience}
+						label="Required experience"
+					/>
 					<Input
 						value={hourlyRate}
 						onChange={setHourlyRate}

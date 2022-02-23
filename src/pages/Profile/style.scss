@@ -12,8 +12,16 @@
       min-width: 300px;
       margin: 0 auto;
 
-      > :not(:last-child) {
+      > :not(:last-child):not(.input) {
+        margin-bottom: 36px;
+      }
+
+      > :not(:last-child).input {
         margin-bottom: 16px;
+      }
+
+      > :not(:last-child).textarea-label {
+        margin-bottom: 8px;
       }
     }
   }

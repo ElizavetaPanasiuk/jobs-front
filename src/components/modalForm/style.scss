@@ -23,6 +23,14 @@
     > :not(:last-child) {
       margin-bottom: 16px;
     }
+
+    > :not(:last-child):not(.input) {
+      margin-bottom: 36px;
+    }
+
+    > :not(:last-child).input {
+      margin-bottom: 16px;
+    }
   }
 
   &__buttons {
