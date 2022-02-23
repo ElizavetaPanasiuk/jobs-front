@@ -14,7 +14,7 @@ yarn build
 ### Данные для входа (у всех юзеров текущий пароль - 1111)
 #### Candidates
 lizaveta.panasiuk@mail.com
-ivan.ivanov
+ivan.ivanov1@mail.com
 
 #### Companies
 google@mail.com
