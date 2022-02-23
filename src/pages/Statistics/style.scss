@@ -1,0 +1,31 @@
+@import '../../styles/templates.scss';
+
+#statistics-page {
+  height: 100%;
+
+  > :first-child {
+    margin-bottom: 24px;
+  }
+
+  .dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+
+    .statisticsIndicator-container {
+      @extend %flex-center;
+      width: 100%;
+      margin-bottom: 24px;
+    }
+
+    .doughnut-container {
+      width: 300px;
+      margin-right: 48px;
+    }
+
+    .bar-container {
+      min-width: 50%;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@import '../../styles/colors.scss';
+@import '../../styles/templates.scss';
+
+.application-card {
+  display: flex;
+  cursor: pointer;
+  padding: 24px 16px 16px;
+  position: relative;
+  
+  &_active {
+    @extend %active-card;
+  }
+
+  .application-card-info {
+    flex: 1;
+
+    > :first-child {
+      width: 100%;
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    > :last-child {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+
+      > :last-child {
+        justify-self: flex-end;
+      }
+    }
+
+    &__company-name {
+      margin-right: 24px;
+    }
+  }
+}

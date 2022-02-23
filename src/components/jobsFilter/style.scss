@@ -1,0 +1,11 @@
+.jobs-filter {
+  min-width: 200px;
+  
+  &__form {
+    height: 100%;
+    
+    > :not(:last-child){
+      margin-bottom: 16px;
+    }
+  }
+}

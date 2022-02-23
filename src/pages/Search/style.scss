@@ -1,0 +1,41 @@
+@import '../../styles/constants.scss';
+@import '../../styles/templates.scss';
+
+#search-page {
+  height: 100%;
+  display: flex;
+
+  > :nth-child(2) {
+    flex: 1.5;
+  }
+
+  > :nth-child(3) {
+    width: 100%;
+    flex: 1;
+  }
+
+  .search-content {
+    display: flex;
+    flex-direction: column;
+    &__results {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+      @extend %scroll-bar;
+      margin-top: 16px;
+
+      > :first-child {
+        margin: 8px 0;
+      }
+    }
+  
+    > :first-child {
+      width: 100%;
+    }
+  }
+
+  > :not(:last-child) {
+    margin-right: 24px;
+  }
+}

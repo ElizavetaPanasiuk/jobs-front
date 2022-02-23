@@ -1,0 +1,43 @@
+@import '../../styles/colors.scss';
+@import '../../styles/templates.scss';
+
+.loader-container {
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+
+  &.loader-container_normal {
+    width: 100%;
+    height: 100%;
+  }
+
+  .loader {
+    &_small {
+      width: 16px;
+      height: 16px;
+      border: 2px solid $color_basic_3;
+      border-top-color: $color_basic_1;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    &_normal {
+      width: 60px;
+      height: 60px;
+      border: 8px solid $color_basic_3;
+      border-top-color: $color_basic_1;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+  }
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

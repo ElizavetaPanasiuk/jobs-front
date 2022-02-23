@@ -1,0 +1,63 @@
+@import '../../styles/colors.scss';
+@import '../../styles/templates.scss';
+
+.select {
+  position: relative;
+
+  > * {
+    width: 100%;
+  }
+
+  > :first-child {
+    position: relative;
+    background-color: $color_white_1;
+    border: 1px solid $color_basic_3;
+    cursor: pointer;
+    border-radius: 4px;
+
+    .select-arrow {
+      position: absolute;
+      right: 8px;
+      width: fit-content;
+
+      &_opened {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__list {
+    position: absolute;
+    background-color: $color_white_1;
+    border-radius: 4px;
+    z-index: 1;
+    max-height: 200px;
+    @extend %box-shadow;
+    overflow-y: auto;
+    @extend %scroll-bar;
+
+    .select-list {
+      &__option {
+        display: block;
+        width: 100%;
+        background-color: $color_white_1;
+        padding: 8px;
+        cursor: pointer;
+        border-top: none;
+
+        &:hover {
+          background-color: $color_basic_3;
+        }
+      }
+    }
+  }
+
+  &_small > :first-child {
+    padding: 8px;
+  }
+
+  &_normal > :first-child {
+    padding: 16px;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,35 @@
+@import '../../styles/colors.scss';
+
+.button {
+  cursor: pointer;
+  background-color: $color_basic_1;
+  color: $color_white_1;
+  border: 1px solid $color_basic_1;
+  border-radius: 4px;
+
+  &:active {
+    background-color: $color_basic_2;
+  }
+
+  &:disabled {
+    background-color: $color_basic_3;
+    border: 1px solid $color_basic_3;
+    color: $color_white_1;
+  }
+
+  &_outline {
+    background-color: $color_white_1;
+    color: $color_basic_1;
+    border: 1px solid $color_basic_1;
+  }
+
+  &_normal {
+    padding: 16px;
+    font-size: 20px;
+  }
+
+  &_small {
+    font-size: 16px;
+    padding: 12px;
+  }
+}

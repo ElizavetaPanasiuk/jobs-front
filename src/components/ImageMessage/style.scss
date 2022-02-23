@@ -1,0 +1,16 @@
+@import '../../styles/colors.scss';
+
+.image-message {
+  &__image {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 16px;
+    color: $color_basic_1;
+  }
+}

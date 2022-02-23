@@ -1,0 +1,18 @@
+@import '../../styles/colors.scss';
+
+.statistics-indicator {
+  text-align: center;
+  display: inline-block;
+  max-width: 250px;
+
+  &__value {
+    color: $color_basic_1;
+    font-size: 64px;
+    margin-bottom: 8px;
+  }
+
+  &__title {
+    color: $color_basic_1;
+    font-size: 24px;
+  }
+}

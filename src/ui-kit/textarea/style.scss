@@ -1,0 +1,15 @@
+@import '../../styles/colors.scss';
+
+.textarea {
+  border: 1px solid $color_basic_3;
+  border-radius: 4px;
+  padding: 16px;
+  resize: none;
+  font-size:  20px;
+  font-family: inherit;
+  min-height: 80px;
+}
+
+.textarea-label {
+  font-weight: 600;
+}

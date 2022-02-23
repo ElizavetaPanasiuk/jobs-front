@@ -1,0 +1,19 @@
+@import '../../styles/colors.scss';
+@import '../../styles/constants.scss';
+@import '../../styles/templates.scss';
+
+.header {
+  @extend %content-padding;
+  height: $header_height;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &[hidden] {
+    display: none;
+  }
+
+  h2 {
+    color: $color_basic_1;
+  }
+}
